@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FoodOrdering App"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="100dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="6.5"
+        android:layout_margin="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/email"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/et_bg"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/password"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/et_bg"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textSize="20dp"
+            android:padding="8dp"
+            android:background="@drawable/btn_bg"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:onClick="signIn"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textStyle="bold"
+            android:textColor="#07ABD5"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in to your account"
+            android:textSize="15dp"
+            android:padding="8dp"
+            android:backgroundTint="#ffff"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:textColor="#07ABD5"
+            android:onClick="logIn"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
